@@ -1,0 +1,5 @@
+
+:link_fontelico: link:https://github.com/fontello/fontelico.font[Fontelico, window="_blank"]
+:link_fontello: link:http://fontello.com/[Fontello, window="_blank"]
+:api_link_fontelico_icon_javafx: link:api/griffon/javafx/support/fontelico/FontelicoIcon.html[griffon.javafx.support.fontelico.FontelicoIcon, window="_blank"]
+:api_link_fontelico_icon_swing: link:api/griffon/swing/support/fontelico/FontelicoIcon.html[griffon.swing.support.fontelico.FontelicoIcon, window="_blank"]
