@@ -1,0 +1,8 @@
+griffon.builder.javafx
+griffon.builder.swing
+griffon.builder.swing.factory
+griffon.javafx.support.fontelico
+griffon.plugins.fontelico
+griffon.swing.support.fontelico
+org.codehaus.griffon.runtime.javafx.fontelico
+org.codehaus.griffon.runtime.swing.fontelico
