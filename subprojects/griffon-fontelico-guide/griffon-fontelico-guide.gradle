@@ -139,8 +139,7 @@ task generateIconCheatSheet << {
     [[icon_cheat_cheet]]
     = Icon Cheat Sheet
 
-    The following tables show all available icons. Table names stand for categories. Note that
-    some icons are not available for all sizes.
+    The following tables show all available icons.
 
     [columns="3*", options="header"]
     |===

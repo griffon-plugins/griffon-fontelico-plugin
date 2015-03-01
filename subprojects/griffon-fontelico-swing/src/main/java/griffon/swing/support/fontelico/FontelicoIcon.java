@@ -41,13 +41,15 @@ import static java.util.Objects.requireNonNull;
  * @author Andres Almiray
  */
 public class FontelicoIcon implements Icon {
-    private static final String FONTELICO_SET = "META-INF/resources/fontelico/3.0/fonts/fontelico.ttf";
+    private static final String FONTELICO_SET = "META-INF/resources/fontelico/0.0/fonts/fontelico.ttf";
     private static final String ERROR_FONT_FONTELICO_NULL = "Argument 'fontelico' must not be null";
 
     private static final Font FONTELICO;
     private static final Object LOCK = new Object[0];
 
     private int size;
+    private int width;
+    private int height;
     private BufferedImage buffer;
 
     private Fontelico fontelico;
@@ -127,6 +129,16 @@ public class FontelicoIcon implements Icon {
         if (size > 0) {
             this.size = size;
             font = FONTELICO.deriveFont(Font.PLAIN, size);
+
+            BufferedImage tmp = new BufferedImage(size, size,
+                BufferedImage.TYPE_INT_ARGB);
+            Graphics2D g2 = GraphicsEnvironment.getLocalGraphicsEnvironment().createGraphics(tmp);
+            g2.setFont(font);
+            this.width = g2.getFontMetrics().charWidth(fontelico.getCode());
+            this.height = g2.getFontMetrics().getHeight();
+
+            g2.dispose();
+
             synchronized (LOCK) {
                 buffer = null;
             }
@@ -147,11 +159,11 @@ public class FontelicoIcon implements Icon {
     }
 
     public int getIconHeight() {
-        return size;
+        return height;
     }
 
     public int getIconWidth() {
-        return size;
+        return width;
     }
 
     private void resolveSize(String description) {

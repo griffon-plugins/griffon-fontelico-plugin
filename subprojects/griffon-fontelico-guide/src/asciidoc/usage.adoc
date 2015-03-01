@@ -37,6 +37,9 @@ it is a subclass of `javafx.scene.control.Label`. The icon class can be used ins
 </GridPane>
 ----
 
+
+The JavaFX icon requires the usage of the `Fontelico` enum value.
+
 == Action Resources
 
 Action icons can be set using resources files if the following format is used:
@@ -53,14 +56,14 @@ Here's an example using the Swing icon
 [source,java]
 .griffon-app/i18n/messages.properties
 ----
-org.example.AppController.action.Preferences.icon=griffon.swing.support.fontelico.FontelicoIcon|emo-happy
+org.example.AppController.action.Preferences.small_icon=griffon.swing.support.fontelico.FontelicoIcon|emo-happy
 ----
 
-The JavaFX icon requires the usage of the `Fontelico` enum value, e.g.
+The JavaFX version for the same icon value is
 
 [source,java]
 .griffon-app/i18n/messages.properties
 ----
-org.example.AppController.action.Preferences.icon=griffon.javafx.support.fontelico.FontelicoIcon|emo_happy
+org.example.AppController.action.Preferences.icon=griffon.javafx.support.fontelico.FontelicoIcon|emo-happy
 ----
 

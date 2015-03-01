@@ -16,3 +16,11 @@ image:https://api.bintray.com/packages/griffon/griffon-plugins/{project-name}/im
 
 Refer to the link:http://griffon-plugins.github.io/{project-name}/[plugin guide, window="_blank"] for
 further information on configuration and usage.
+
+Fontelico by Fontello.com
+
+Font License: SIL OFL 1.1 (http://scripts.sil.org/OFL) +
+Applies to all font files
+
+Code License: CC BY-SA (http://creativecommons.org/licenses/by-sa/3.0/) +
+Applies to icons and artwork

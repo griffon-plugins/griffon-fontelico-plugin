@@ -17,9 +17,9 @@ package griffon.javafx.support.fontelico;
 
 import griffon.core.editors.PropertyEditorResolver;
 import griffon.plugins.fontelico.Fontelico;
-import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 
 import javax.annotation.Nonnull;
 import java.beans.PropertyEditor;
@@ -32,8 +32,8 @@ import static java.util.Objects.requireNonNull;
 /**
  * @author Andres Almiray
  */
-public class FontelicoIcon extends Label {
-    private static final String FONTELICO_SET = "META-INF/resources/fontelico/3.0/fonts/fontelico.ttf";
+public class FontelicoIcon extends Text {
+    private static final String FONTELICO_SET = "META-INF/resources/fontelico/0.0/fonts/fontelico.ttf";
     private static final String ERROR_FONT_FONTELICO_NULL = "Argument 'fontelico' must not be null";
 
     static {
@@ -88,7 +88,7 @@ public class FontelicoIcon extends Label {
 
     public void setIconColor(@Nonnull Color color) {
         requireNonNull(color, "Argument 'color' must not be null");
-        setTextFill(color);
+        setFill(color);
         this.iconColor = color;
     }
 
